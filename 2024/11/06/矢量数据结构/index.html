@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Tags: 音乐相关 | 幻霜の小窝</title>
+    <title>矢量数据结构 | 幻霜の小窝</title>
     <meta name="author" content="Fictional Frost" />
     <meta name="description" content="小时候不理解老人晒太阳，一坐就是半天，长大了才明白，目之所及，皆是回忆，心之所想，皆是过往，眼之所看，皆是遗憾。" />
     <meta name="keywords" content="这是一条关键字" />
@@ -37,6 +37,10 @@
 
 
 <script src="/js/lib/preview.js"></script>
+
+
+
+
 
 
 
@@ -150,161 +154,102 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div id="archives">
-    
-    <div class="categories-tags">
-        
-        
-        
-        <span>
-            <a href="/tags/%E9%9F%B3%E4%B9%90%E7%9B%B8%E5%85%B3/" style="background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%)">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                音乐相关
-            </a>
+            <div class="article">
+    <div>
+        <h1>矢量数据结构</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2024/11/6
         </span>
         
-        
-        
-        
-        
-        <span>
-            <a href="/tags/%E7%BC%96%E7%A8%8B%E7%9B%B8%E5%85%B3/" style="background: #ff7d73">
+        <span class="category">
+            <a href="/categories/%E5%9C%B0%E7%90%86%E7%9B%B8%E5%85%B3/">
                 <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                编程相关
-            </a>
-        </span>
-        
-        
-        
-        <span>
-            <a href="/tags/%E5%9C%B0%E7%90%86%E7%9B%B8%E5%85%B3/" style="background: #00a596">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
                 </span>
                 地理相关
             </a>
         </span>
         
         
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            
+            <span class="tag">
+                
+                <a href="/tags/%E6%95%B0%E5%AD%A6/" style="color: #00a596">
+                    数学
+                </a>
+            </span>
+            
+        </span>
+        
     </div>
     
-    <div class="timeline">
-        <div class="timeline-tail"></div>
-        <div class="timeline-content">
-            <div class="item-time">2024/11/4</div>
-            <a href="/2024/11/04/%E7%A7%98%E5%AF%86%E4%BA%BA%E5%81%B6%E5%89%A7/">
-                <h3>秘密人偶剧</h3>
-            </a>
-            <div class="info">
-                
-                <span class="category">
-                    <a href="/categories/%E5%85%B3%E4%BA%8E%E9%9F%B3%E4%B9%90/">
-                        <span class="icon">
-                            <i class="fa-solid fa-bookmark fa-fw"></i>
-                        </span>
-                        关于音乐
-                    </a>
-                </span>
-                
-                
-                <span class="tags">
-                    <span class="icon">
-                        <i class="fa-solid fa-tags fa-fw"></i>
-                    </span>
-                    
-                    
-                    <span class="tag">
-                        
-                        <a href="/tags/%E9%9F%B3%E4%B9%90%E7%9B%B8%E5%85%B3/" style="color: #ffa2c4">
-                            音乐相关
-                        </a>
-                    </span>
-                    
-                </span>
-                
-            </div>
-        </div>
+    <div class="content" v-pre>
+        <h2 id="矢量数据结构是逻辑模型的一种，同类型还有栅格数据结构，镶嵌数据结构，多维数据结构等等"><a href="#矢量数据结构是逻辑模型的一种，同类型还有栅格数据结构，镶嵌数据结构，多维数据结构等等" class="headerlink" title="矢量数据结构是逻辑模型的一种，同类型还有栅格数据结构，镶嵌数据结构，多维数据结构等等"></a>矢量数据结构是逻辑模型的一种，同类型还有栅格数据结构，镶嵌数据结构，多维数据结构等等</h2><p><img src="/assets/Geography/%E7%9F%A2%E9%87%8F%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%841.png"></p>
+<h3 id="实体数据结构"><a href="#实体数据结构" class="headerlink" title="实体数据结构"></a>实体数据结构</h3><p><img src="/assets/Geography/%E7%9F%A2%E9%87%8F%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%842.png"></p>
+<p>只考虑点和面的数据结构<br>记录多边形A<br>记录方法1（多边形数据文件）：A 坐标；(x1,y1)(x2,y2)(x3,y3)……<br>方法2（点坐标文件）：</p>
+<table>
+<thead>
+<tr>
+<th>点号</th>
+<th>坐标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>x1y1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>x2y2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>x3y3</td>
+</tr>
+<tr>
+<td>以此类推</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>方法3（多边形文件）；</p>
+<table>
+<thead>
+<tr>
+<th>多边形id</th>
+<th>点号串</th>
+<th>类别码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A</td>
+<td>1,2,3,4,5,6,7,8,1</td>
+<td>A102</td>
+</tr>
+<tr>
+<td>以此类推</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>优点：操作简单，编码容易，数据编排直观<br>缺点：1，相邻多边形的公共边界要数字化两遍,造成数据冗余存储,可能导致输出的公共边界出现间隙或重叠<br>2，缺少多边形的邻域信息和图形的拓扑关系<br>3，岛只作为一个单个图形,没有建立与其他多边形的联系<br>（2和3的意思都是我记录了一个多边形a但我不知道他和其他多边形bcd有没有相邻或者包括之类的联系，比如上图c被d包围但但看坐标我鬼知道c在哪）</p>
+
     </div>
     
-    <div class="timeline">
-        <div class="timeline-tail"></div>
-        <div class="timeline-content">
-            <div class="item-time">2024/10/28</div>
-            <a href="/2024/10/28/D%E5%A4%A7%E8%B0%83%E6%9F%B4%E5%B0%8F%E5%8D%8F/">
-                <h3>D大调柴小协</h3>
-            </a>
-            <div class="info">
-                
-                <span class="category">
-                    <a href="/categories/%E5%85%B3%E4%BA%8E%E9%9F%B3%E4%B9%90/">
-                        <span class="icon">
-                            <i class="fa-solid fa-bookmark fa-fw"></i>
-                        </span>
-                        关于音乐
-                    </a>
-                </span>
-                
-                
-                <span class="tags">
-                    <span class="icon">
-                        <i class="fa-solid fa-tags fa-fw"></i>
-                    </span>
-                    
-                    
-                    <span class="tag">
-                        
-                        <a href="/tags/%E9%9F%B3%E4%B9%90%E7%9B%B8%E5%85%B3/" style="color: #00a596">
-                            音乐相关
-                        </a>
-                    </span>
-                    
-                </span>
-                
-            </div>
-        </div>
-    </div>
     
-    <div class="timeline">
-        <div class="timeline-tail"></div>
-        <div class="timeline-content">
-            <div class="item-time">2024/10/28</div>
-            <a href="/2024/10/28/%E5%BD%B1%E8%89%B2%E8%88%9E%E8%B0%B1%E5%AD%90%EF%BC%88%E5%89%8D%E5%8D%8A%E6%AE%B5%EF%BC%89/">
-                <h3>影色舞谱子（前半段）</h3>
-            </a>
-            <div class="info">
-                
-                <span class="category">
-                    <a href="/categories/%E5%85%B3%E4%BA%8E%E9%9F%B3%E4%B9%90/">
-                        <span class="icon">
-                            <i class="fa-solid fa-bookmark fa-fw"></i>
-                        </span>
-                        关于音乐
-                    </a>
-                </span>
-                
-                
-                <span class="tags">
-                    <span class="icon">
-                        <i class="fa-solid fa-tags fa-fw"></i>
-                    </span>
-                    
-                    
-                    <span class="tag">
-                        
-                        <a href="/tags/%E9%9F%B3%E4%B9%90%E7%9B%B8%E5%85%B3/" style="color: #ff7d73">
-                            音乐相关
-                        </a>
-                    </span>
-                    
-                </span>
-                
-            </div>
-        </div>
-    </div>
+    
+    
+    
+    
     
 </div>
 
@@ -336,6 +281,12 @@
         
     </div>
     <script src="/js/main.js"></script>
+    
+    
+
+
+
+
     
 </body>
 </html>
